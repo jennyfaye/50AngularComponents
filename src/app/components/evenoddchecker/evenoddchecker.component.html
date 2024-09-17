@@ -1,0 +1,13 @@
+<h2>#11 component name: evenoddchecker</h2>
+
+<form >
+  <label for="number">Enter a number:</label>
+  <input name="number" id="number" type="number" [(ngModel)]="number">
+  <br><br>
+
+  <button type="submit" (click)="checkEvenOdd()">Enter</button>
+</form>
+
+<div>
+  <h3>Result: {{ result }}</h3>
+</div>
