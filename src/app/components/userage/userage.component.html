@@ -1,0 +1,13 @@
+<h2>#6 component name: userage</h2>
+
+<form>
+  <label>Enter your birthdate: </label>
+  <input type="date" name="birthdate" [(ngModel)]="birthdate" required>
+  <br><br>
+
+  <button type="submit" (click)="displayAge()">Calculate Age </button>
+</form>
+
+<div >
+  <h3>Age: {{ age }} years old</h3>
+</div>
