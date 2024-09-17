@@ -17,6 +17,7 @@ import { TextlengthComponent } from "./components/textlength/textlength.componen
 import { CurrencyconverterComponent } from "./components/currencyconverter/currencyconverter.component";
 import { EvenoddcheckerComponent } from "./components/evenoddchecker/evenoddchecker.component";
 import { WordreverserComponent } from "./components/wordreverser/wordreverser.component";
+import { ShowdateComponent } from "./components/showdate/showdate.component";
 
 const routes: Routes = [
   { path: '1displayhelloword', component: DisplayhelloworldComponent},
@@ -31,6 +32,11 @@ const routes: Routes = [
   { path: '10currencyconverter', component: CurrencyconverterComponent},
   { path: '11evenoddchecker', component: EvenoddcheckerComponent},
   { path: '12wordreverser', component: WordreverserComponent},
+  { path: '13showdate', component: ShowdateComponent},
+
+
+
+
 ];
 
 @NgModule({
@@ -56,6 +62,7 @@ const routes: Routes = [
     CurrencyconverterComponent,
     EvenoddcheckerComponent,
     WordreverserComponent,
+    ShowdateComponent
   ],
 
   providers: [
