@@ -9,12 +9,14 @@ import { DisplayhelloworldComponent } from "./components/displayhelloworld/displ
 import { ShowhellobuttonComponent } from "./components/showhellobutton/showhellobutton.component";
 import { DisplaynameComponent } from "./components/displayname/displayname.component";
 import { CounterComponent } from "./components/counter/counter.component";
+import { SimpleformComponent } from "./components/simpleform/simpleform.component";
 
 const routes: Routes = [
   { path: '1displayhelloword', component: DisplayhelloworldComponent},
   { path: '2showhellobutton', component: ShowhellobuttonComponent},
   { path: '3displayname', component: DisplaynameComponent},
   { path: '4counter', component: CounterComponent},
+  { path: '5simpleform', component: SimpleformComponent},
 ];
 
 @NgModule({
@@ -32,6 +34,7 @@ const routes: Routes = [
     DisplayhelloworldComponent,
     ShowhellobuttonComponent,
     DisplaynameComponent,
+    SimpleformComponent,
   ],
 
   providers: [

@@ -1,0 +1,22 @@
+<h2>#5 component name: simpleform</h2>
+
+<form>
+  <label>First Name: </label>
+  <input type="text" name="fname"placeholder="Enter your first name" [(ngModel)]="fname" required>
+  <br>
+
+  <label>Last Name: </label>
+  <input type="text" name="lname" placeholder="Enter your last name" [(ngModel)]="lname" required>
+  <br>
+
+  <label>Email:</label>
+  <input type="text" name="email" placeholder="Enter your email" [(ngModel)]="email" required>
+  <br><br>
+
+  <button type="submit" (click)="displayData()">Submit</button>
+  </form>
+
+  <div *ngIf="displayedName && displayedEmail">
+    <h3>Submitted Data:</h3><p>Name: {{ displayedName }} </p>
+    <p>Email: {{ displayedEmail }}</p>
+  </div>
