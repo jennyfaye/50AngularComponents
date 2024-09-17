@@ -7,10 +7,12 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FormsModule } from "@angular/forms";
 import { DisplayhelloworldComponent } from "./components/displayhelloworld/displayhelloworld.component";
 import { ShowhellobuttonComponent } from "./components/showhellobutton/showhellobutton.component";
+import { DisplaynameComponent } from "./components/displayname/displayname.component";
 
 const routes: Routes = [
   { path: '1displayhelloword', component: DisplayhelloworldComponent},
   { path: '2showhellobutton', component: ShowhellobuttonComponent},
+  { path: '3displayname', component: DisplaynameComponent},
 ];
 
 @NgModule({
@@ -27,6 +29,7 @@ const routes: Routes = [
     AppComponent,
     DisplayhelloworldComponent,
     ShowhellobuttonComponent,
+    DisplaynameComponent,
   ],
 
   providers: [

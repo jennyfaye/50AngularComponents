@@ -1,0 +1,13 @@
+<h2>#3 component name: displayname</h2>
+
+<form>
+<label for="name">Enter your name: </label>
+<input name="name" id="name" type="text" placeholder="Enter your name" [(ngModel)]="name">
+<br>
+
+<button (click)="displayName()">Show Name</button>
+</form>
+
+<div>
+<h3>{{ displayedName }}</h3>
+</div>
