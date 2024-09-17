@@ -14,6 +14,7 @@ import { UserageComponent } from "./components/userage/userage.component";
 import { UsergreetingComponent } from "./components/usergreeting/usergreeting.component";
 import { CalculatorComponent } from "./components/calculator/calculator.component";
 import { TextlengthComponent } from "./components/textlength/textlength.component";
+import { CurrencyconverterComponent } from "./components/currencyconverter/currencyconverter.component";
 
 const routes: Routes = [
   { path: '1displayhelloword', component: DisplayhelloworldComponent},
@@ -25,7 +26,7 @@ const routes: Routes = [
   { path: '7usergreeting', component: UsergreetingComponent},
   { path: '8calculator', component: CalculatorComponent},
   { path: '9textlength', component: TextlengthComponent},
-
+  { path: '10currencyconverter', component: CurrencyconverterComponent},
 ];
 
 @NgModule({
@@ -48,6 +49,7 @@ const routes: Routes = [
     UsergreetingComponent,
     CalculatorComponent,
     TextlengthComponent,
+    CurrencyconverterComponent,
   ],
 
   providers: [
