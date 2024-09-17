@@ -10,6 +10,8 @@ import { ShowhellobuttonComponent } from "./components/showhellobutton/showhello
 import { DisplaynameComponent } from "./components/displayname/displayname.component";
 import { CounterComponent } from "./components/counter/counter.component";
 import { SimpleformComponent } from "./components/simpleform/simpleform.component";
+import { UserageComponent } from "./components/userage/userage.component";
+import { UsergreetingComponent } from "./components/usergreeting/usergreeting.component";
 
 const routes: Routes = [
   { path: '1displayhelloword', component: DisplayhelloworldComponent},
@@ -17,6 +19,9 @@ const routes: Routes = [
   { path: '3displayname', component: DisplaynameComponent},
   { path: '4counter', component: CounterComponent},
   { path: '5simpleform', component: SimpleformComponent},
+  { path: '6userage', component: UserageComponent},
+  { path: '7usergreeting', component: UsergreetingComponent},
+
 ];
 
 @NgModule({
@@ -35,6 +40,8 @@ const routes: Routes = [
     ShowhellobuttonComponent,
     DisplaynameComponent,
     SimpleformComponent,
+    UserageComponent,
+    UsergreetingComponent,
   ],
 
   providers: [

@@ -1,0 +1,13 @@
+<h2>#7 component name: usergreeting</h2>
+
+<form>
+  <label for="name">Enter your name: </label>
+  <input name="name" id="name" type="text" [(ngModel)]="name" required>
+  <br><br>
+
+  <button type="submit" (click)="displayGreeting()">Display Greetings</button>
+</form>
+
+<div>
+  <h3> {{this.greeting}} </h3>
+</div>
