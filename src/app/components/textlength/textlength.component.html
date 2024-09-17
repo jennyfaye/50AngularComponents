@@ -1,0 +1,13 @@
+<h2>#9 component name: textlength</h2>
+
+<form >
+  <label for="str">Enter a string: </label>
+  <input name="str" id="str" type="text" [(ngModel)]="str">
+  <br><br>
+
+  <button type="submit" (click)="countLength()">Count String Length</button>
+</form>
+
+<div *ngIf="stringLength">
+  <h3>Length of the string: {{ stringLength }} </h3>
+</div>
