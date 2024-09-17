@@ -12,6 +12,7 @@ import { CounterComponent } from "./components/counter/counter.component";
 import { SimpleformComponent } from "./components/simpleform/simpleform.component";
 import { UserageComponent } from "./components/userage/userage.component";
 import { UsergreetingComponent } from "./components/usergreeting/usergreeting.component";
+import { CalculatorComponent } from "./components/calculator/calculator.component";
 
 const routes: Routes = [
   { path: '1displayhelloword', component: DisplayhelloworldComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: '5simpleform', component: SimpleformComponent},
   { path: '6userage', component: UserageComponent},
   { path: '7usergreeting', component: UsergreetingComponent},
+  { path: '8calculator', component: CalculatorComponent},
 
 ];
 
@@ -42,6 +44,7 @@ const routes: Routes = [
     SimpleformComponent,
     UserageComponent,
     UsergreetingComponent,
+    CalculatorComponent,
   ],
 
   providers: [

@@ -1,0 +1,17 @@
+<h2>#8 component name: calculator</h2>
+
+<label for="number">First number: </label>
+<input name="number" id="number" type="number" placaholder="Enter first number" [(ngModel)]="number1">
+<br>
+<label for="number">Second number: </label>
+<input name="number" id="number" type="number" placaholder="Enter second number" [(ngModel)]="number2">
+<br><br>
+
+<button type="button" (click)="addition()">+</button>
+<button type="button" (click)="subtraction()">-</button>
+<button type="button" (click)="multiplication()">*</button>
+<button type="button" (click)="division()">/</button>
+
+<div>
+<h3>Result: {{result}}</h3>
+</div>
