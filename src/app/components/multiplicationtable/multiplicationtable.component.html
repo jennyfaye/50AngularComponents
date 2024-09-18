@@ -1,0 +1,16 @@
+<h2>#15 component name: </h2>
+
+<form >
+  <label for="number">Enter a number: </label>
+  <input name="number" id="number" type="number" [(ngModel)]="number">
+  <br><br>
+
+  <button type="submit" (click)="generateTable()">Generate Multiplication Table</button>
+  </form>
+
+  <div *ngIf="multiplicationTable.length > 0">
+    <h3>Multiplication Table:</h3>
+    <ul>
+      <li *ngFor="let entry of multiplicationTable">{{ entry }}</li>
+    </ul>
+  </div>
