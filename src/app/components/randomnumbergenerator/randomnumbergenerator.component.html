@@ -1,0 +1,17 @@
+<h2>#27 component name: randomnumbergenerator</h2>
+
+<form >
+  <label for="username">Minimum Range: </label>
+  <input name="minRange" id="minRange" type="number" placeholder="Minimum" [(ngModel)]="minRange">
+  <br><br>
+
+  <label for="maxRange">Maximum Range:</label>
+  <input name="maxRange" id="maxRange" type="number" placeholder="Maximum" [(ngModel)]="maxRange">
+  <br><br>
+
+  <button type="submit" (click)="generateRandomNumber()">Generate Random Number</button>
+</form>
+
+<div *ngIf="randomNumber !== null">
+  <h3>Random Number: {{ randomNumber }}</h3>
+</div>
