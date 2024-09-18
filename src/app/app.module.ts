@@ -18,6 +18,7 @@ import { CurrencyconverterComponent } from "./components/currencyconverter/curre
 import { EvenoddcheckerComponent } from "./components/evenoddchecker/evenoddchecker.component";
 import { WordreverserComponent } from "./components/wordreverser/wordreverser.component";
 import { ShowdateComponent } from "./components/showdate/showdate.component";
+import { ShowusernameComponent } from "./components/showusername/showusername.component";
 
 const routes: Routes = [
   { path: '1displayhelloword', component: DisplayhelloworldComponent},
@@ -33,6 +34,8 @@ const routes: Routes = [
   { path: '11evenoddchecker', component: EvenoddcheckerComponent},
   { path: '12wordreverser', component: WordreverserComponent},
   { path: '13showdate', component: ShowdateComponent},
+  { path: '14showusername', component: ShowusernameComponent},
+
 
 
 
@@ -62,7 +65,8 @@ const routes: Routes = [
     CurrencyconverterComponent,
     EvenoddcheckerComponent,
     WordreverserComponent,
-    ShowdateComponent
+    ShowdateComponent,
+    ShowusernameComponent,
   ],
 
   providers: [
