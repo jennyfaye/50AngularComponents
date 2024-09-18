@@ -1,0 +1,18 @@
+<h2>#18 component name: bookmarklist</h2>
+
+<form>
+  <label for="url">Enter a URL: </label>
+  <input type="url" id="url" name="url" placeholder="Enter a valid URL" [(ngModel)]="url" required>
+  <br><br>
+
+  <button type="submit" (click)="addUrl()" >Add URL</button>
+</form>
+
+<div *ngIf="urls.length > 0">
+  <h3>URLs:</h3>
+  <ul>
+    <li *ngFor="let url of urls">
+      <a [href]="url" target="_blank">{{ url }}</a>
+    </li>
+  </ul>
+</div>
