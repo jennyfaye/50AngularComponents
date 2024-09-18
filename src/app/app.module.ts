@@ -49,6 +49,7 @@ import { RandomsongComponent } from "./components/randomsong/randomsong.componen
 import { ListofartistnameComponent } from "./components/listofartistname/listofartistname.component";
 import { NumbertowordsComponent } from "./components/numbertowords/numbertowords.component";
 import { PasswordstrengthComponent } from "./components/passwordstrength/passwordstrength.component";
+import { CalculatetwodatesComponent } from "./components/calculatetwodates/calculatetwodates.component";
 
 
 
@@ -96,6 +97,7 @@ const routes: Routes = [
   { path: '42listofartistname', component: ListofartistnameComponent},
   { path: '43numbertowords', component: NumbertowordsComponent},
   { path: '44passwordstrength', component: PasswordstrengthComponent},
+  { path: '45calculatetwodates', component: CalculatetwodatesComponent},
 ];
 
 @NgModule({
@@ -153,6 +155,7 @@ const routes: Routes = [
     ListofartistnameComponent,
     NumbertowordsComponent,
     PasswordstrengthComponent,
+    CalculatetwodatesComponent,
   ],
 
   providers: [
