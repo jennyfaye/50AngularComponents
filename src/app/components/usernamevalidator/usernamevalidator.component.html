@@ -1,0 +1,13 @@
+<h2>#32 component name: usernamevalidator</h2>
+
+<form>
+  <label for="username">Username: </label>
+  <input name="username" id="username" type="text" placeholder = "Enter username" [(ngModel)]="username">
+  <br><br>
+
+  <button type="submit" (click)="checkUsername()">Check Validity</button>
+</form>
+
+<div *ngIf="validityMessage">
+  <h3>{{ validityMessage }}</h3>
+</div>
