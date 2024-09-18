@@ -1,0 +1,14 @@
+<h2>#43 component name: numbertowords</h2>
+
+<h2>Number to Words Converter</h2>
+<form>
+  <label for="number">Enter a number: </label>
+  <input id="number" type="number" [(ngModel)]="number" name="number" required>
+  <br><br>
+  <button type="button" (click)="displayNumberInWords()">Convert to Words</button>
+  <br><br>
+</form>
+
+<div>
+  <h3 *ngIf="words">In Words: {{ words }}</h3>
+</div>

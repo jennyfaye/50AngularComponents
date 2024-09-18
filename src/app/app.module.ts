@@ -47,6 +47,7 @@ import { UppercasegreetingComponent } from "./components/uppercasegreeting/upper
 import { DivisiblecheckerComponent } from "./components/divisiblechecker/divisiblechecker.component";
 import { RandomsongComponent } from "./components/randomsong/randomsong.component";
 import { ListofartistnameComponent } from "./components/listofartistname/listofartistname.component";
+import { NumbertowordsComponent } from "./components/numbertowords/numbertowords.component";
 
 
 
@@ -92,6 +93,7 @@ const routes: Routes = [
   { path: '40divisiblechecker', component: DivisiblecheckerComponent},
   { path: '41randomsong', component: RandomsongComponent},
   { path: '42listofartistname', component: ListofartistnameComponent},
+  { path: '43numbertowords', component: NumbertowordsComponent},
 ];
 
 @NgModule({
@@ -147,6 +149,7 @@ const routes: Routes = [
     DivisiblecheckerComponent,
     RandomsongComponent,
     ListofartistnameComponent,
+    NumbertowordsComponent,
   ],
 
   providers: [
