@@ -51,6 +51,7 @@ import { NumbertowordsComponent } from "./components/numbertowords/numbertowords
 import { PasswordstrengthComponent } from "./components/passwordstrength/passwordstrength.component";
 import { CalculatetwodatesComponent } from "./components/calculatetwodates/calculatetwodates.component";
 import { StopwatchComponent } from "./components/stopwatch/stopwatch.component";
+import { NameinitialComponent } from "./components/nameinitial/nameinitial.component";
 
 
 
@@ -100,6 +101,8 @@ const routes: Routes = [
   { path: '44passwordstrength', component: PasswordstrengthComponent},
   { path: '45calculatetwodates', component: CalculatetwodatesComponent},
   { path: '46stopwatch', component: StopwatchComponent},
+  { path: '47nameinitial', component: NameinitialComponent},
+
 ];
 
 @NgModule({
@@ -159,6 +162,7 @@ const routes: Routes = [
     PasswordstrengthComponent,
     CalculatetwodatesComponent,
     StopwatchComponent,
+    NameinitialComponent,
   ],
 
   providers: [

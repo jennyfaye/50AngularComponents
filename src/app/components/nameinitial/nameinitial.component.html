@@ -1,0 +1,14 @@
+<h2>#47 component name: nameinitial</h2>
+
+<h2>Name Initials Generator</h2>
+
+<label for="fullName">Full Name: </label>
+<input name="fullName" id="fullName" type="text" placeholder="Enter full name" [(ngModel)]="fullName">
+<br><br>
+
+<button (click)="generateInitials()">Generate Initials</button>
+<br><br>
+
+<div>
+<h3 *ngIf="initials">Initials: {{ initials }}</h3>
+</div>
