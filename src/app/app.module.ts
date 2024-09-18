@@ -53,6 +53,7 @@ import { CalculatetwodatesComponent } from "./components/calculatetwodates/calcu
 import { StopwatchComponent } from "./components/stopwatch/stopwatch.component";
 import { NameinitialComponent } from "./components/nameinitial/nameinitial.component";
 import { UnitconverterComponent } from "./components/unitconverter/unitconverter.component";
+import { TextformmaterComponent } from "./components/textformmater/textformmater.component";
 
 
 
@@ -104,7 +105,7 @@ const routes: Routes = [
   { path: '46stopwatch', component: StopwatchComponent},
   { path: '47nameinitial', component: NameinitialComponent},
   { path: '48unitconverter', component: UnitconverterComponent},
-
+  { path: '49textformmater', component: TextformmaterComponent},
 
 ];
 
@@ -167,6 +168,7 @@ const routes: Routes = [
     StopwatchComponent,
     NameinitialComponent,
     UnitconverterComponent,
+    TextformmaterComponent,
   ],
 
   providers: [

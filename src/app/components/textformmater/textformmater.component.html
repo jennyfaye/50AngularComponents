@@ -1,0 +1,17 @@
+<h2>#49 component name: textformmater</h2>
+
+<h2>Text Formatter</h2>
+<label for="text">Enter Text: </label>
+<input name="text" id="text" type="text" placeholder="Enter text" [(ngModel)]="text" >
+<br>
+<select [(ngModel)]="format">
+  <option value="uppercase">Uppercase</option>
+  <option value="lowercase">Lowercase</option>
+</select>
+<br><br>
+<button (click)="formatText()">Format</button>
+<br><br>
+
+<div>
+  <h3 *ngIf="formattedText">Formatted Text: {{ formattedText }}</h3>
+</div>
