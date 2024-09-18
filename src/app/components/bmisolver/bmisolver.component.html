@@ -1,0 +1,17 @@
+<h2>#31 component name: bmisolver</h2>
+
+<form>
+  <label for="height">Height (in meters): </label>
+  <input name="height" id="height" type="number" step="0.01" placeholder="Enter height" [(ngModel)]="height">
+  <br><br>
+
+  <label for="weight">Weight (in kilograms): </label>
+  <input name="weight" id="weight" type="number" step="0.1" placeholder="Enter weight" [(ngModel)]="weight">
+  <br><br>
+
+  <button type="submit" (click)="calculateBMI()">Calculate BMI</button>
+</form>
+
+<div *ngIf="bmi !== null">
+  <h3>Your BMI: {{ bmi.toFixed(2) }}</h3>
+</div>
