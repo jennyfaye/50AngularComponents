@@ -1,0 +1,25 @@
+<h2>#21 name: temperatureconvertercomponent</h2>
+
+<form>
+  <label for="temperature">Enter Temperature: </label>
+  <input name="temperature" id="temperature" type="number" [(ngModel)]="temperature">
+  <br><br>
+
+  <label>
+    <input type="radio" name="conversionType" [(ngModel)]="conversionType" value="CtoF" checked>
+    Celsius to Fahrenheit
+  </label>
+  <br>
+
+  <label>
+    <input type="radio" name="conversionType" [(ngModel)]="conversionType" value="FtoC">
+    Fahrenheit to Celsius
+  </label>
+  <br><br>
+
+  <button type="submit" (click)="convertTemperature()">Convert</button>
+</form>
+
+<div *ngIf="convertedTemp !== null">
+  <h3>Converted Temperature: {{ convertedTemp.toFixed(2) }}</h3>
+</div>
