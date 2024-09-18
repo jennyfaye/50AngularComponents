@@ -48,6 +48,7 @@ import { DivisiblecheckerComponent } from "./components/divisiblechecker/divisib
 import { RandomsongComponent } from "./components/randomsong/randomsong.component";
 import { ListofartistnameComponent } from "./components/listofartistname/listofartistname.component";
 import { NumbertowordsComponent } from "./components/numbertowords/numbertowords.component";
+import { PasswordstrengthComponent } from "./components/passwordstrength/passwordstrength.component";
 
 
 
@@ -94,6 +95,7 @@ const routes: Routes = [
   { path: '41randomsong', component: RandomsongComponent},
   { path: '42listofartistname', component: ListofartistnameComponent},
   { path: '43numbertowords', component: NumbertowordsComponent},
+  { path: '44passwordstrength', component: PasswordstrengthComponent},
 ];
 
 @NgModule({
@@ -150,6 +152,7 @@ const routes: Routes = [
     RandomsongComponent,
     ListofartistnameComponent,
     NumbertowordsComponent,
+    PasswordstrengthComponent,
   ],
 
   providers: [
