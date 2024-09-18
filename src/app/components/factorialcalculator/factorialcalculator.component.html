@@ -1,0 +1,13 @@
+<h2>#23 component name: factorialcalculator</h2>
+
+<form >
+  <label for="number">Enter a number: </label>
+  <input name="number" id="number" type="number" [(ngModel)]="number">
+  <br><br>
+
+  <button type="submit" (click)="calculateFactorial()">Convert</button>
+</form>
+
+<div *ngIf="factorialResult !== null">
+  <h3>Factorial: {{ factorialResult }}</h3>
+</div>
