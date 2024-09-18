@@ -1,0 +1,15 @@
+<h2>#20 component name: palindromechecker</h2>
+
+<form >
+  <label for="word">Enter a word: </label>
+  <input name="word" id="word" type="text" [(ngModel)]="word">
+  <br><br>
+
+  <button type="submit" (click)="checkPalindrome()">Check</button>
+
+  <div *ngIf="palindrome !== null">
+    <p *ngIf="palindrome; else notPalindrome">Yes, "{{ word }}" is a palindrome!</p>
+    <ng-template #notPalindrome>
+      <p>No, "{{ word }}" is not a palindrome.</p>
+    </ng-template>
+  </div>
