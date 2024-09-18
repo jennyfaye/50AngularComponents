@@ -34,6 +34,7 @@ import { WordcounterComponent } from "./components/wordcounter/wordcounter.compo
 import { RandomnumbergeneratorComponent } from "./components/randomnumbergenerator/randomnumbergenerator.component";
 import { MultiplicationcheckerComponent } from "./components/multiplicationchecker/multiplicationchecker.component";
 import { UppercaseconverterComponent } from "./components/uppercaseconverter/uppercaseconverter.component";
+import { WordshufflerComponent } from "./components/wordshuffler/wordshuffler.component";
 
 
 
@@ -66,7 +67,7 @@ const routes: Routes = [
   { path: '26wordcounter', component: WordcounterComponent},
   { path: '27randomnumbergenerator', component: RandomnumbergeneratorComponent},
   { path: '28multiplicationchecker', component: MultiplicationcheckerComponent},
-  { path: '29uppercaseconverter', component: UppercaseconverterComponent},
+  { path: '30wordshuffler', component: WordshufflerComponent},
 ];
 
 @NgModule({
@@ -109,6 +110,7 @@ const routes: Routes = [
     RandomnumbergeneratorComponent,
     MultiplicationcheckerComponent,
     UppercaseconverterComponent,
+    WordshufflerComponent,
   ],
 
   providers: [
