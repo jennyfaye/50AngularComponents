@@ -37,6 +37,7 @@ import { UppercaseconverterComponent } from "./components/uppercaseconverter/upp
 import { WordshufflerComponent } from "./components/wordshuffler/wordshuffler.component";
 import { BmisolverComponent } from "./components/bmisolver/bmisolver.component";
 import { UsernamevalidatorComponent } from "./components/usernamevalidator/usernamevalidator.component";
+import { InterestcalculatorComponent } from "./components/interestcalculator/interestcalculator.component";
 
 
 
@@ -72,6 +73,7 @@ const routes: Routes = [
   { path: '30wordshuffler', component: WordshufflerComponent},
   { path: '31bmisolver', component: BmisolverComponent},
   { path: '32usernamevalidator', component: UsernamevalidatorComponent},
+  { path: '33interestcalculator', component: InterestcalculatorComponent},
 ];
 
 @NgModule({
@@ -117,6 +119,7 @@ const routes: Routes = [
     WordshufflerComponent,
     BmisolverComponent,
     UsernamevalidatorComponent,
+    InterestcalculatorComponent,
   ],
 
   providers: [
