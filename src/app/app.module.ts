@@ -30,6 +30,7 @@ import { ShoppinglistComponent } from "./components/shoppinglist/shoppinglist.co
 import { FactorialcalculatorComponent } from "./components/factorialcalculator/factorialcalculator.component";
 import { TodomanagerComponent } from "./components/todomanager/todomanager.component";
 import { GuessnumbergameComponent } from "./components/guessnumbergame/guessnumbergame.component";
+import { WordcounterComponent } from "./components/wordcounter/wordcounter.component";
 
 
 
@@ -59,7 +60,7 @@ const routes: Routes = [
   { path: '23factorialcalculator', component: FactorialcalculatorComponent},
   { path: '24todomanager', component: TodomanagerComponent},
   { path: '25guessnumbergame', component: GuessnumbergameComponent},
-
+  { path: '26wordcounter', component: WordcounterComponent},
 
 ];
 
@@ -99,7 +100,7 @@ const routes: Routes = [
     FactorialcalculatorComponent,
     TodomanagerComponent,
     GuessnumbergameComponent,
-
+    WordcounterComponent,
 
   ],
 
