@@ -54,6 +54,7 @@ import { StopwatchComponent } from "./components/stopwatch/stopwatch.component";
 import { NameinitialComponent } from "./components/nameinitial/nameinitial.component";
 import { UnitconverterComponent } from "./components/unitconverter/unitconverter.component";
 import { TextformmaterComponent } from "./components/textformmater/textformmater.component";
+import { EmojitrackerComponent } from "./components/emojitracker/emojitracker.component";
 
 
 
@@ -106,7 +107,7 @@ const routes: Routes = [
   { path: '47nameinitial', component: NameinitialComponent},
   { path: '48unitconverter', component: UnitconverterComponent},
   { path: '49textformmater', component: TextformmaterComponent},
-
+  { path: '50emojitracker', component: EmojitrackerComponent},
 ];
 
 @NgModule({
@@ -169,6 +170,7 @@ const routes: Routes = [
     NameinitialComponent,
     UnitconverterComponent,
     TextformmaterComponent,
+    EmojitrackerComponent,
   ],
 
   providers: [

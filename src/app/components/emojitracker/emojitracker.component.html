@@ -1,0 +1,14 @@
+<h2>#50 component name: emojitracker</h2>
+
+<h2>Emoji Mood Tracker</h2>
+
+<div>
+  <button *ngFor="let emoji of emojis" (click)="selectEmoji(emoji.emoji, emoji.description)">
+    {{ emoji.emoji }}
+  </button>
+</div>
+
+<div *ngIf="selectedEmoji && selectedDescription">
+  <p>Selected Emoji: {{ selectedEmoji }}</p>
+  <p>Mood Description: {{ selectedDescription }}</p>
+</div>
