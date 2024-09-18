@@ -52,6 +52,7 @@ import { PasswordstrengthComponent } from "./components/passwordstrength/passwor
 import { CalculatetwodatesComponent } from "./components/calculatetwodates/calculatetwodates.component";
 import { StopwatchComponent } from "./components/stopwatch/stopwatch.component";
 import { NameinitialComponent } from "./components/nameinitial/nameinitial.component";
+import { UnitconverterComponent } from "./components/unitconverter/unitconverter.component";
 
 
 
@@ -102,6 +103,8 @@ const routes: Routes = [
   { path: '45calculatetwodates', component: CalculatetwodatesComponent},
   { path: '46stopwatch', component: StopwatchComponent},
   { path: '47nameinitial', component: NameinitialComponent},
+  { path: '48unitconverter', component: UnitconverterComponent},
+
 
 ];
 
@@ -163,6 +166,7 @@ const routes: Routes = [
     CalculatetwodatesComponent,
     StopwatchComponent,
     NameinitialComponent,
+    UnitconverterComponent,
   ],
 
   providers: [
