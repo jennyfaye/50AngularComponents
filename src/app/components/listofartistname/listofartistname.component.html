@@ -1,0 +1,20 @@
+<h2>#42 component name: </h2>
+
+<h2> Make a List of Artist Name</h2>
+<form >
+  <label for="artist">Enter artist name: </label>
+  <input name="artist" id="artist" type="text" [(ngModel)]="artist">
+<br><br>
+
+<button type="submit" (click)="addName()">Add Artist Name</button>
+<br><br>
+
+<div>
+<h3>List of Artist Name:</h3>
+<ul>
+  <li *ngFor="let name of artistName; let i = index">
+    {{ name }}
+    <button (click)="removeArtist(i)">Remove</button>
+  </li>
+</ul>
+</div>
