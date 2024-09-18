@@ -32,6 +32,7 @@ import { TodomanagerComponent } from "./components/todomanager/todomanager.compo
 import { GuessnumbergameComponent } from "./components/guessnumbergame/guessnumbergame.component";
 import { WordcounterComponent } from "./components/wordcounter/wordcounter.component";
 import { RandomnumbergeneratorComponent } from "./components/randomnumbergenerator/randomnumbergenerator.component";
+import { MultiplicationcheckerComponent } from "./components/multiplicationchecker/multiplicationchecker.component";
 
 
 
@@ -63,6 +64,7 @@ const routes: Routes = [
   { path: '25guessnumbergame', component: GuessnumbergameComponent},
   { path: '26wordcounter', component: WordcounterComponent},
   { path: '27randomnumbergenerator', component: RandomnumbergeneratorComponent},
+  { path: '28multiplicationchecker', component: MultiplicationcheckerComponent},
 ];
 
 @NgModule({
@@ -103,6 +105,7 @@ const routes: Routes = [
     GuessnumbergameComponent,
     WordcounterComponent,
     RandomnumbergeneratorComponent,
+    MultiplicationcheckerComponent,
   ],
 
   providers: [
