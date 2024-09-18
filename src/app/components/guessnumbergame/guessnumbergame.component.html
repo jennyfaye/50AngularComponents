@@ -1,0 +1,15 @@
+<h2>#25 component name: guessnumbergame</h2>
+
+<p>Guess a number between 1 and 100:</p>
+
+<form >
+  <label for="guess">Enter number: </label>
+  <input name="guess" id="guess" type="number" min="1" max="100" [(ngModel)]="guess">
+  <br><br>
+
+  <button type="submit" (click)="checkGuess()">Submit Guess</button>
+</form>
+
+<div *ngIf="feedback">
+  <p>{{ feedback }}</p>
+</div>
