@@ -41,6 +41,7 @@ import { InterestcalculatorComponent } from "./components/interestcalculator/int
 import { CompoundinterestcalculatorComponent } from "./components/compoundinterestcalculator/compoundinterestcalculator.component";
 import { FibonaccigeneratorComponent } from "./components/fibonaccigenerator/fibonaccigenerator.component";
 import { OddsumcalculatorComponent } from "./components/oddsumcalculator/oddsumcalculator.component";
+import { CurrencyformatterComponent } from "./components/currencyformatter/currencyformatter.component";
 
 
 
@@ -80,6 +81,7 @@ const routes: Routes = [
   { path: '34compoundinterestcalculator', component: CompoundinterestcalculatorComponent},
   { path: '35fibonaccigenerator', component: FibonaccigeneratorComponent},
   { path: '36oddsumcalculator', component: OddsumcalculatorComponent},
+  { path: '37currencyformatter', component: CurrencyformatterComponent},
 ];
 
 @NgModule({
@@ -128,7 +130,8 @@ const routes: Routes = [
     InterestcalculatorComponent,
     CompoundinterestcalculatorComponent,
     FibonaccigeneratorComponent,
-    OddsumcalculatorComponent
+    OddsumcalculatorComponent,
+    CurrencyformatterComponent,
   ],
 
   providers: [
