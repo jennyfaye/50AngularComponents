@@ -1,0 +1,16 @@
+<h2>#35 component name: fibonaccigenerator</h2>
+
+<form >
+  <label for="number">Number of Fibonacci Numbers: </label>
+  <input name="number" id="number" type="number" placeholder="Enter a positive number" [(ngModel)]="number">
+  <br><br>
+
+  <button type="submit" (click)="generateFibonacci()">Generate Fibonacci Sequence</button>
+</form>
+
+<div *ngIf="fibonacciSequence.length > 0">
+  <h3>Fibonacci Sequence:</h3>
+  <ul>
+    <li *ngFor="let number of fibonacciSequence">{{ number }}</li>
+  </ul>
+</div>
