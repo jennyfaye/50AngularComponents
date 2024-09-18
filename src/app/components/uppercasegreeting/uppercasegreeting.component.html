@@ -1,0 +1,13 @@
+<h2>#39 component name: uppercasegreeting</h2>
+
+<form>
+  <label for="name">Enter your name: </label>
+  <input type="text" name="name" id="name" placeholder="Enter your name" [(ngModel)]="name">
+  <br><br>
+
+  <button (click)="convertToUppercase()">Convert to Uppercase</button>
+</form>
+
+<div>
+  <h3>Uppercase Name: {{ uppercaseName }}</h3>
+</div>
