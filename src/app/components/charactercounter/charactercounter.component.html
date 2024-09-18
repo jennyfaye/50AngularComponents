@@ -1,0 +1,13 @@
+<h2>#19 component name: charactercounter</h2>
+
+<form >
+  <label for="str">Enter a string: </label>
+  <input name="str" id="str" type="text" [(ngModel)]="str">
+  <br><br>
+
+  <button type="submit" (click)="countCharacters()">Count</button>
+</form>
+
+<div *ngIf="characterCount">
+<h3>Character count: {{ characterCount }}</h3>
+</div>

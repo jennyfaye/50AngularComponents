@@ -23,6 +23,7 @@ import { MultiplicationtableComponent } from "./components/multiplicationtable/m
 import { SimpleloginComponent } from "./components/simplelogin/simplelogin.component";
 import { FahrenheittocelsiusComponent } from "./components/fahrenheittocelsius/fahrenheittocelsius.component";
 import { BookmarklistComponent } from "./components/bookmarklist/bookmarklist.component";
+import { CharactercounterComponent } from "./components/charactercounter/charactercounter.component";
 
 const routes: Routes = [
   { path: '1displayhelloword', component: DisplayhelloworldComponent},
@@ -43,6 +44,7 @@ const routes: Routes = [
   { path: '16simplelogin', component: SimpleloginComponent},
   { path: '17fahrenheittocelsius', component: FahrenheittocelsiusComponent},
   { path: '18bookmarklist', component: BookmarklistComponent},
+  { path: '19charactercounter', component: CharactercounterComponent},
 
 
 
@@ -79,6 +81,7 @@ const routes: Routes = [
     SimpleloginComponent,
     FahrenheittocelsiusComponent,
     BookmarklistComponent,
+    CharactercounterComponent,
   ],
 
   providers: [
