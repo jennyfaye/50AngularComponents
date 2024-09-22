@@ -11,5 +11,6 @@ export class WordcounterComponent {
 
   countWords() {
     this.wordCount = this.text.trim().split(/\s+/).filter(word => word.length > 0).length;
+    console.log("Words are counted.")
   }
 }

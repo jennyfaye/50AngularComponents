@@ -4,6 +4,6 @@
 
 <button (click)="displayRandomQuote()">Show Random Quote</button>
 
-<div>
+<div *ngIf="currentQuote">
   <h3>Quote: {{ currentQuote }}</h3>
 </div>

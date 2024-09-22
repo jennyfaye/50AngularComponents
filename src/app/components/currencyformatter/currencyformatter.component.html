@@ -1,11 +1,13 @@
-<p>currencyformatter works!</p>
+<h2>#37 component name: currencyformatter</h2>
+
+<h2>Currency Formatter</h2>
 
 <form>
   <label for="amount">Enter an amount: </label>
-  <input type="number" name="amount"  id="amount" [(ngModel)]="amount">
+  <input name="amount"  id="amount" type="number" [(ngModel)]="amount">
   <br><br>
 
-  <label for="currency">Choose Currency:</label>
+  <label for="currency">Choose Currency: </label>
   <select name="currency" id="currency" [(ngModel)]="selectedCurrency">
     <option value="USD">Dollar (USD)</option>
     <option value="PHP">Philippine Peso (PHP)</option>

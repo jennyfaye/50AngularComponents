@@ -18,8 +18,8 @@ export class CompoundinterestcalculatorComponent {
       const rate = this.rate / 100;
       const time = this.time;
       const frequency = this.frequency;
-
       this.compoundInterest = principal * Math.pow(1 + (rate / frequency), frequency * time) - principal;
+      console.log("Compound interest calculated.");
     } else {
       this.compoundInterest = 0;
       console.log("Enter principal, rate, time, and frequency.");

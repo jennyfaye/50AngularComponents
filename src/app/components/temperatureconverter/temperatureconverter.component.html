@@ -1,18 +1,21 @@
 <h2>#21 name: temperatureconvertercomponent</h2>
 
+<h2>Temperature Converter</h2>
+
 <form>
   <label for="temperature">Enter Temperature: </label>
   <input name="temperature" id="temperature" type="number" [(ngModel)]="temperature">
   <br><br>
 
+  <h3>Choose Temperature: </h3>
   <label>
-    <input type="radio" name="conversionType" [(ngModel)]="conversionType" value="CtoF" checked>
+    <input name="conversionType" id="conversionType" type="radio" [(ngModel)]="conversionType" value="CtoF" checked>
     Celsius to Fahrenheit
   </label>
   <br>
 
   <label>
-    <input type="radio" name="conversionType" [(ngModel)]="conversionType" value="FtoC">
+    <input name="conversionType" id="conversionType" type="radio" [(ngModel)]="conversionType" value="FtoC">
     Fahrenheit to Celsius
   </label>
   <br><br>

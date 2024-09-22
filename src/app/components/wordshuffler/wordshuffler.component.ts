@@ -15,6 +15,7 @@ export class WordshufflerComponent {
         .split('')
         .sort(() => Math.random() - 0.5)
         .join('');
+      console.log("Word is shuffled.")
     }
   }
 }

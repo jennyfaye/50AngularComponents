@@ -3,7 +3,7 @@
 <h2>Emoji Mood Tracker</h2>
 
 <div>
-  <button *ngFor="let emoji of emojis" (click)="selectEmoji(emoji.emoji, emoji.description)">
+  <button type="button" *ngFor="let emoji of emojis" (click)="selectEmoji(emoji.emoji, emoji.description)">
     {{ emoji.emoji }}
   </button>
 </div>

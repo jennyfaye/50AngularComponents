@@ -11,5 +11,6 @@ export class UppercaseconverterComponent {
 
   convertToUppercase() {
     this.uppercasedString = this.str.toUpperCase();
+    console.log("Text converted to uppercase.")
   }
 }

@@ -14,8 +14,10 @@ export class UnitconverterComponent {
     if (this.value !== null) {
       if (this.unitType === 'm-to-km') {
         this.convertedValue = this.value / 1000;
+        console.log("Converted to kilometer.")
       } else if (this.unitType === 'km-to-m') {
         this.convertedValue = this.value * 1000;
+        console.log("Converted to meter.")
       }
     }
   }

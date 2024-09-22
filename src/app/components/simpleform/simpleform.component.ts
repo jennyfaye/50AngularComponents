@@ -12,6 +12,7 @@ export class SimpleformComponent {
 
   displayedName: string = '';
   displayedEmail: string = '';
+
   displayData() {
     this.displayedName = this.fname + this.lname;
     this.displayedEmail = this.email;

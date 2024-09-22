@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './showhellobutton.component.css'
 })
 export class ShowhellobuttonComponent {
-  message: string = '';displayMessage() {
+  message: string = '';
+  displayMessage() {
     this.message = 'Hello World';
     console.log("Clicked!")
   }

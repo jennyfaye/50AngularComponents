@@ -1,17 +1,19 @@
 <h2>#40 component name: divisiblechecker</h2>
 
+<h2>Divisible Number Checker</h2>
+
 <form>
-  <label for="num1">Enter the first number:</label>
-  <input  type="number" name="num1" id="num1" placeholder="Enter the first number" [(ngModel)]="num1">
+  <label for="num1">Enter first number: </label>
+  <input name="num1" id="num1" type="number" placeholder="Enter first number" [(ngModel)]="num1">
   <br><br>
 
-  <label for="num2">Enter the second number:</label>
-  <input type="number" name="num2" id="num2" placeholder="Enter the second number" [(ngModel)]="num2">
+  <label for="num2">Enter second number: </label>
+  <input name="num2" id="num2" type="number"placeholder="Enter second number" [(ngModel)]="num2">
   <br><br>
 
   <button type="submit" (click)="checkDivisibility()">Check Divisibility</button>
 </form>
 
-<div>
+<div *ngIf="resultMessage">
   <h3>Result: {{ resultMessage }}</h3>
 </div>

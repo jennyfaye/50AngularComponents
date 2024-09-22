@@ -15,7 +15,7 @@ export class FahrenheittocelsiusComponent {
       console.log("Converted")
     } else {
       this.celsius = null;
-      console.log("Enter Temperature To Convert")
+      console.log("Enter Temperature to Convert")
     }
   }
 }

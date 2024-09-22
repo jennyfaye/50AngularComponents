@@ -12,6 +12,7 @@ export class OddsumcalculatorComponent {
   calculateOddNumberSum() {
     if (this.number !== 0 && this.number > 0) {
       this.sum = this.calculateSumOfOddNumbers(this.number);
+      console.log("Odd number calculated.");
     } else {
       this.sum = 0;
       console.log("Enter a positive number.");

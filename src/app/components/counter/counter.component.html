@@ -1,8 +1,10 @@
 <h2>#4 component name: counter</h2>
 
-<button (click)="incrementCounter()">Increase Counter</button>
+<h2>Increasing Number Counter</h2>
+
+<button type="button" (click)="incrementCounter()">Increase Counter</button>
 <br>
 
-<div>
+<div *ngIf="count">
 <h3>Current Count: {{ count }}</h3>
 </div>

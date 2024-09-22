@@ -1,22 +1,25 @@
 <h2>#5 component name: simpleform</h2>
 
+<h2>Simple Form</h2>
+
 <form>
   <label>First Name: </label>
-  <input type="text" name="fname"placeholder="Enter your first name" [(ngModel)]="fname" required>
+  <input name="fname" id="fname" type="text" placeholder="Enter your first name" [(ngModel)]="fname" required>
   <br>
 
   <label>Last Name: </label>
-  <input type="text" name="lname" placeholder="Enter your last name" [(ngModel)]="lname" required>
+  <input name="lname" id="lname" type="text" placeholder="Enter your last name" [(ngModel)]="lname" required>
   <br>
 
-  <label>Email:</label>
-  <input type="text" name="email" placeholder="Enter your email" [(ngModel)]="email" required>
+  <label>Email: </label>
+  <input name="email" id="email" type="text" placeholder="Enter your email" [(ngModel)]="email" required>
   <br><br>
 
   <button type="submit" (click)="displayData()">Submit</button>
   </form>
 
   <div *ngIf="displayedName && displayedEmail">
-    <h3>Submitted Data:</h3><p>Name: {{ displayedName }} </p>
+    <h3>Submitted Data:</h3>
+    <p>Name: {{ displayedName }} </p>
     <p>Email: {{ displayedEmail }}</p>
   </div>

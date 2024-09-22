@@ -12,8 +12,10 @@ export class FactorialcalculatorComponent {
   calculateFactorial() {
     if (this.number !== null && this.number >= 0) {
       this.factorialResult = this.factorial(this.number);
+      console.log('Factorial Calculated.')
     } else {
       this.factorialResult = null
+      console.log('Enter a number.')
     }
   }
 

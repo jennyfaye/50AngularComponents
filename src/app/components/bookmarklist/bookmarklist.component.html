@@ -1,8 +1,10 @@
 <h2>#18 component name: bookmarklist</h2>
 
+<h2>Bookmark List</h2>
+
 <form>
   <label for="url">Enter a URL: </label>
-  <input type="url" id="url" name="url" placeholder="Enter a valid URL" [(ngModel)]="url" required>
+  <input name="url" id="url" type="url" placeholder="Enter a valid URL" [(ngModel)]="url" required>
   <br><br>
 
   <button type="submit" (click)="addUrl()" >Add URL</button>

@@ -12,9 +12,10 @@ export class FibonaccigeneratorComponent {
   generateFibonacci() {
     if (this.number && this.number > 0) {
       this.fibonacciSequence = this.calculateFibonacci(this.number);
+      console.log('Fibonacci Generated.');
     } else {
       this.fibonacciSequence = [];
-      alert('Please enter a positive number.');
+      console.log('Enter a positive number.');
     }
   }
 

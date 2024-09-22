@@ -13,7 +13,7 @@ export class RandomnumbergeneratorComponent {
   generateRandomNumber() {
     if (this.minRange >= this.maxRange) {
       this.randomNumber = null;
-      alert('The minimum range must be less than the maximum range.');
+      console.log('The minimum range must be less than the maximum range.');
       return;
     }
 

@@ -4,6 +4,6 @@
 
 <button (click)="displayRandomSong()">Show Random Song</button>
 
-<div>
-  <h3>Song: {{ currentSong }}</h3>
+<div *ngIf="currentSong">
+  <h3>Song: {{ currentSong }}</h3>
 </div>

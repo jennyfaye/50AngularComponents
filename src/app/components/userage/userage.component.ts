@@ -22,7 +22,6 @@ export class UserageComponent {
       }
 
       this.age = age;
-
       console.log("Age Displayed")
     }
   }

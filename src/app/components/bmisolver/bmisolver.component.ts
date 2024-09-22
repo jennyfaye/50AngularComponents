@@ -13,6 +13,7 @@ export class BmisolverComponent {
   calculateBMI() {
     if (this.height && this.weight) {
       this.bmi = this.weight / (this.height * this.height);
+      console.log("BMI calculated!");
     } else {
       this.bmi = null;
       console.log("Enter both height and weight.");

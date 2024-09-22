@@ -13,8 +13,10 @@ export class TextformmaterComponent {
   formatText() {
     if (this.format === 'uppercase') {
       this.formattedText = this.text.toUpperCase();
+      console.log("Text Uppercase")
     } else if (this.format === 'lowercase') {
       this.formattedText = this.text.toLowerCase();
+      console.log("Text Lowercase")
     }
   }
 }

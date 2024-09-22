@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class DisplaynameComponent {
   name: string = '';
   displayedName: string = '';
+
   displayName() {
     this.displayedName = this.name;
     console.log("Displayed name")

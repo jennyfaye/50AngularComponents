@@ -11,5 +11,6 @@ export class WordreverserComponent {
 
   reverseWord() {
     this.reversedWord = this.word.split('').reverse().join('');
+    console.log("Word is reversed.")
   }
 }

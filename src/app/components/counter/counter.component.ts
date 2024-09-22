@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CounterComponent {
   count: number = 0;
+
   incrementCounter() {
     this.count++;
     console.log("Clicked!")

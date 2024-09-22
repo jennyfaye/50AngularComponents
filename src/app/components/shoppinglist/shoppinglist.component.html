@@ -1,15 +1,22 @@
 <h2>#22 component name: shoppinglist</h2>
 
+<h2>Shopping List</h2>
+
 <form >
   <label for="item">Add an item: </label>
   <input name="item" id="item" type="text" [(ngModel)]="item">
   <br><br>
 
-  <button type="submit" (click)="addItem()">Add</button>
+  <button type="submit" (click)="addItem()">Add Item</button>
+  <br><br>
+</form>
 
-  <ul>
-    <li *ngFor="let item of shoppingList; let i = index">
-      {{ item }}
-      <button (click)="removeItem(i)">Remove</button>
-    </li>
-  </ul>
+  <div *ngIf="let item of shoppingList">
+    <h3>Item List:</h3>
+    <ul>
+      <li *ngFor="let item of shoppingList; let i = index">
+        {{ item }}
+        <button (click)="removeItem(i)">Remove</button>
+      </li>
+    </ul>
+  </div>

@@ -15,12 +15,15 @@ export class CurrencyformatterComponent {
   formatCurrency() {
     if (this.selectedCurrency === 'USD') {
       this.formattedAmount = '$' + this.amount.toFixed(2);
+      console.log("Converted to USD")
     } else if (this.selectedCurrency === 'PHP') {
       const phpAmount = this.amount * this.phpConversionRate;
       this.formattedAmount = '₱' + phpAmount.toFixed(2);
+      console.log("Converted to PHP")
     } else if (this.selectedCurrency === 'EUR') {
       const eurAmount = this.amount * this.euroConversionRate;
       this.formattedAmount = '€' + eurAmount.toFixed(2);
+      console.log("Converted to EUR")
     }
   }
 }

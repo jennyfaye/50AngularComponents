@@ -12,5 +12,6 @@ export class NameinitialComponent {
   generateInitials() {
     const names = this.fullName.split(' ');
     this.initials = names.map(name => name.charAt(0)).join('');
+    console.log("Initials Generated.")
   }
 }

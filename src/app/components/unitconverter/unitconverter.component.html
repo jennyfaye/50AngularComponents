@@ -1,18 +1,22 @@
 <h2>#48 component name: unitconverter</h2>
 
 <h2>Unit Converter</h2>
-<label>Value: </label>
-<input [(ngModel)]="value" placeholder="Enter value" type="number" [(ngModel)]="value">
-<br>
-<select [(ngModel)]="unitType">
-  <option value="m-to-km">Meters to Kilometers</option>
-  <option value="km-to-m">Kilometers to Meters</option>
-</select>
-<br><br>
 
-<button (click)="convert()">Convert</button>
-<br><br>
+<form>
+  <label for="number">Value: </label>
+  <input name="number" id="number" type="number" placeholder="Enter value" type="number" [(ngModel)]="value">
+  <br><br>
 
-<div>
-<h3 *ngIf="convertedValue !== null">Converted Value: {{ convertedValue }}</h3>
+  <label for="unitType">Choose Unit Type: </label>
+  <select name="unitType" id="unitType" [(ngModel)]="unitType">
+    <option value="m-to-km">Meters to Kilometers</option>
+    <option value="km-to-m">Kilometers to Meters</option>
+  </select>
+  <br><br>
+
+  <button type="submit" (click)="convert()">Convert</button>
+</form>
+
+<div *ngIf="convertedValue !== null">
+  <h3>Converted Value: {{ convertedValue }}</h3>
 </div>

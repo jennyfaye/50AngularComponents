@@ -11,6 +11,6 @@ export class CharactercounterComponent {
 
   countCharacters() {
     this.characterCount = this.str.length;
-    console.log("Character Counted")
+    console.log("Character Counted!")
   }
 }

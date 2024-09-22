@@ -1,7 +1,9 @@
 <h2>#13 component name: showdate</h2>
 
-<button type="submit" (click)="showDateTime()">Show Current Date and Time</button>
+<h2>Show Date</h2>
 
-<div>
+<button type="button" (click)="showDateTime()">Show Current Date and Time</button>
+
+<div *ngIf="currentDateTime">
   <h3>Current Date and Time: {{ currentDateTime }}</h3>
 </div>

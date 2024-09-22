@@ -13,9 +13,11 @@ export class ListofartistnameComponent {
     if (this.artist.trim()) {
       this.artistName.push(this.artist.trim());
       this.artist = '';
+      console.log("Artist name added.")
     }
   }
   removeArtist(index: number) {
     this.artistName.splice(index, 1);
+    console.log("Artist name removed.")
   }
 }

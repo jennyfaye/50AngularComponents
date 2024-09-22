@@ -11,9 +11,9 @@ export class CalculatorComponent {
   result: number = 0;
 
   addition(){
-  console.log("Added")
-  this.result = this.number1 + this.number2;
-}
+    console.log("Added")
+    this.result = this.number1 + this.number2;
+  }
 
   subtraction(){
     console.log("Subtracted")

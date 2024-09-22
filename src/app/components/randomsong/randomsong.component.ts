@@ -33,5 +33,6 @@ export class RandomsongComponent {
   displayRandomSong() {
     const randomIndex = Math.floor(Math.random() * this.songs.length);
     this.currentSong = this.songs[randomIndex];
+    console.log("Displayed")
   }
 }

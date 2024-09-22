@@ -87,6 +87,7 @@ const routes: Routes = [
   { path: '26wordcounter', component: WordcounterComponent},
   { path: '27randomnumbergenerator', component: RandomnumbergeneratorComponent},
   { path: '28multiplicationchecker', component: MultiplicationcheckerComponent},
+  { path: '29uppercaseconverter', component: UppercaseconverterComponent},
   { path: '30wordshuffler', component: WordshufflerComponent},
   { path: '31bmisolver', component: BmisolverComponent},
   { path: '32usernamevalidator', component: UsernamevalidatorComponent},

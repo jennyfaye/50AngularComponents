@@ -1,15 +1,22 @@
 <h2>#24 component name: todomanager</h2>
 
+<h2>To Do Manager List</h2>
+
 <form >
   <label for="task">Add task: </label>
   <input name="task" id="task" type="text" [(ngModel)]="task">
   <br><br>
 
-  <button type="submit" (click)="addTask()">Add</button>
+  <button type="submit" (click)="addTask()">Add Task</button>
+  <br><br>
+</form>
 
-  <ul>
-    <li *ngFor="let task of toDoList; let i = index">
-      {{ task }}
-      <button (click)="removeTask(i)">Remove</button>
-    </li>
-  </ul>
+  <div *ngIf="let task of toDoList">
+    <h3>To Do List:</h3>
+    <ul>
+      <li *ngFor="let task of toDoList; let i = index">
+        {{ task }}
+        <button (click)="removeTask(i)">Remove</button>
+      </li>
+    </ul>
+  </div>

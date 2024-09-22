@@ -1,6 +1,7 @@
 <h2>#45 component name: calculatetwodates</h2>
 
-<h2>Date Difference Calculator</h2>
+<h2>Days Between Two Dates</h2>
+
 <form>
   <label for="date1">Start Date: </label>
   <input id="date1" type="date" [(ngModel)]="date1" name="date1">
@@ -10,7 +11,7 @@
   <input id="date2" type="date" [(ngModel)]="date2" name="date2">
   <br><br>
 
-  <button type="button" (click)="calculateDaysDifference()">Calculate Difference</button>
+  <button type="submit" (click)="calculateDaysDifference()">Calculate Difference</button>
   <br><br>
 </form>
 

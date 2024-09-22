@@ -12,8 +12,10 @@ export class EvenoddcheckerComponent {
   checkEvenOdd() {
     if (this.number !== null) {
       this.result = this.number % 2 === 0 ? 'Even' : 'Odd';
+      console.log("Even")
     } else {
       this.result = null;
+      console.log("Odd")
     }
   }
 }

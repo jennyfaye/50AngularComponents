@@ -1,8 +1,10 @@
 <h2>#12 component name: wordreverser</h2>
 
+<h2>Word Reverser</h2>
+
 <form>
   <label for="word">Enter a word: </label>
-  <input type="text" name="word" placeholder="Enter your word" [(ngModel)]="word">
+  <input name="word" id="word" type="text"placeholder="Enter your word" [(ngModel)]="word">
   <br><br>
 
   <button type="submit" (click)="reverseWord()">Reverse Word</button>
